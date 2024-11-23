@@ -17,7 +17,7 @@ create table nivel_importancia (
     primary key (idnivel)
 );
 
-create table task (
+create table tasks (
 	idTask int not null auto_increment,
 	tittle varchar(100) not null,
     descripcion text,
