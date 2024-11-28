@@ -24,6 +24,6 @@ func InitDataBase() {
 	db.Logger = db.Logger.LogMode(logger.Info)
 }
 
-func GetDataBase() *gorm.DB {
+func GetDB() *gorm.DB {
 	return db
 }
