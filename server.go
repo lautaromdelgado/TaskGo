@@ -2,6 +2,7 @@ package main
 
 import (
 	"taskgo/database"
+	"taskgo/routes"
 
 	"github.com/labstack/echo/v4"
 )
@@ -13,6 +14,7 @@ func main() {
 	database.InitDataBase()
 
 	// Inicialización de las rutas.
+	routes.InitRoutes(e)
 
 	e.Logger.Fatal(e.Start(":7000"))
 }
